@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block title%}Portada{% endblock %}
+
+{% block background  %}{% load static %}{% static 'core/img/home.png' %}{% endblock  %}
+
+{% block header %}
+    <h1>Loren's</h1>
+    <span class="subheading">Sala de belleza</span>
+{% endblock  %}
+
+{% block content  %}
+    <center>
+        <h1>Loren's</h1>
+        <h1>Siempre contigo luciendo radiante.</h1>
+        <p style="margin:20px" class="hero_paragraph">Dedicados a brindarte lo excepcional. Atendemos con reserva previa y nos destacamos en una variedad de servicios que incluyen: esmalte semi permanente, baño de acrílico, diseños creativos y esculturales de de uñas acrílicas y en poligel, innovadores cortes de cabello, peinados vanguardistas, y mucho más</p>
+        <a href="service/" class="cta">Comienza ahora</a>
+    </center>
+{% endblock  %}

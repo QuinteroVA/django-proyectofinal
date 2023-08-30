@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% block title%}Servicios{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/services.png' %}{% endblock %}
+{% block header %}
+<h1>Servicios</h1>
+<span class="subheading">Visitanos</span>
+{% endblock %}
+{% block content %}
+{% for service in services %}
+
+<div class="row service">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{{service.image.url}}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading title">{{service.title}}</h2>   
+        <p>{{service.description|linebreaksbr}}</p>
+        <p><a href="/">Agenda tu cita</a></p>
+        <br>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% block title%}Contactos{% endblock %}
+{% block background  %}{% load static %}{% static 'core/img/contact.png' %}{% endblock  %}
+{% block header %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 class="section-heading">Bienvenido a la Sala de Belleza Loren's</h2>
+        <p>En Loren's, nos enorgullece brindarte los mejores servicios de belleza y cuidado personal. Estamos aquí para hacerte sentir y lucir radiante. Si tienes alguna pregunta sobre nuestros servicios, deseas hacer una reserva o simplemente quieres saber más sobre lo que ofrecemos, no dudes en ponerte en contacto con nosotros.</p>
+        <p>Estamos ansiosos por atenderte y asegurarnos de que tengas una experiencia increíble en Loren's.<br>¡Contáctanos hoy mismo y descubre cómo podemos ayudarte a resaltar tu belleza única!</p>
+        <br>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+        </span>
+        <span><b>Dirección:</b> Av. Primera N1 y Segunda P2</span>
+        <br>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+        </span>
+        <span><b>Teléfono:</b> 09 876 543 210</span>
+        <br>
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+        <span><b>Correo Electrónico:</b> lorens@correo.com</span>
+        <br><br>
+        <center>
+            <h2 class="section-heading">Nuestra ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255347.11100714048!2d-78.51371829870263!3d-0.18006299157356184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a4002427c9f%3A0x44b991e158ef5572!2sQuito!5e0!3m2!1ses!2sec!4v1693171637418!5m2!1ses!2sec" width="400" height="300" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </center>
+    </div>
+</div>
+{% endblock  %}

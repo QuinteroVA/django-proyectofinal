@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% block title%}Acerca de{% endblock %}
+{% block background  %}{% load static %}{% static 'core/img/about.png' %}{% endblock  %}
+{% block header %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/logo.png' %}">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Bienvenidos a Loren's<br>
+            Tu refugio de belleza y bienestar
+        </h2>   
+        <p>Nuestro equipo de expertos en belleza está aquí para realzar tu belleza natural y brindarte momentos de relajación. En Loren's, no solo te ofrecemos tratamientos excepcionales, sino también un ambiente acogedor donde puedes escapar de la rutina y cuidarte.</p>
+        <p>Desde cortes vanguardistas hasta rejuvenecedores tratamientos de cuidado de la piel, cada detalle está diseñado para que te sientas increíble.</p>
+        <p>Te invitamos a sumergirte en la experiencia Loren's y descubrir cómo podemos hacer que brilles tanto por dentro como por fuera. ¡Te damos la bienvenida a nuestro espacio de belleza y relajación!</p>
+    </div>
+</div>
+{% endblock  %}
